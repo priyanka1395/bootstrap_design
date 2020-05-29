@@ -1,0 +1,175 @@
+<html>
+    <head>
+	    <link rel="stylesheet" href="dist/css/bootstrap.css">
+	</head>
+	<style>
+	         i{
+			 Color:red;
+			 }
+	   </style>
+	<script>
+	  function validate()
+	   {
+	   var schoolname=document.getElementById("schoolname").value;
+	   
+	   schoolname=schoolname.trim();
+	   
+	   if(schoolname=="")
+			{
+			 document.getElementById("schoolnameerror").innerHTML="invalid schoolname";
+			document.getElementById("schoolname").style.borderColor="red";
+			}
+			else{
+			document.getElementById("schoolname").style.borderColor="green";
+			}
+			//================================//
+	   }
+	</script>
+	<body>
+
+	   <div class="container">
+	      <div class="row">
+		      <div class="col-sm-2"></div>
+			   <div class="col-sm-6 well">
+			  
+			    <div class="row form-group">
+				      <div class="col-sm-2">School Name:</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter name">
+					  </div>
+					  
+					 <div class="row form-group">
+					<div class="col-sm-2">State</div>
+					  <div class="col-sm-4">
+					    <select tabindex="1" name="ucity" id="ucity">
+						<option value="1"> bihar</option>
+						<option value="2" selected="Degree:">choose state</option>
+						<option value="3"> karnakata</option>
+						<option value="4"> kerala</option>
+					</select>
+		                </div>
+						 </div>
+					  <div class="col-sm-2">Address1:</div>
+					  <div class="col-sm-4">
+					     <textarea placeholder="Enter Address"></textarea>
+					  </div>
+					  
+					  <div class="col-sm-2">District:</div>
+					    <div class="col-sm-4">
+					    <select tabindex="1" name="ucity" id="ucity">
+						<option value="1">purniya</option>
+						<option value="2" selected="Skill:">Choose District:</option>
+						<option value="3"> saharsa</option>
+						<option value="4"> bhagalpur</option>
+					</select>
+					  </div>
+					   </div>
+					    <div class="row form-group">
+				      <div class="col-sm-2">Pincode:</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter pincode">
+					  </div>
+					  </div>
+					  
+					   <div class="row form-group">
+				      <div class="col-sm-2">School Phone:</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter phone">
+					  </div>
+					  
+					  <div class="row form-group">
+				      <div class="col-sm-2">School Email Id:</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter Email">
+					  </div>
+				      </div>
+					  <div class="col-sm-2">School Grade:</div>
+					    <div class="col-sm-4">
+					    <select tabindex="1" name="ucity" id="ucity">
+						<option value="1">A</option>
+						<option value="2" selected="Skill:">Choose Grade:</option>
+						<option value="3"> B</option>
+						<option value="4"> C</option>
+					</select>
+					  </div>
+					   <div class="row form-group">
+				      <div class="col-sm-2">Password:</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter password again">
+					  </div>
+				      </div>
+					    <div class="col-sm-2">School Syllabus:</div>
+					    <div class="col-sm-4">
+					    <select tabindex="1" name="ucity" id="ucity">
+						<option value="1">physics</option>
+						<option value="2" selected="Skill:">Choose School Syllabus:</option>
+						<option value="3"> hindi</option>
+						<option value="4">english</option>
+					</select>
+					</div>
+					   <div class="row form-group">
+				      <div class="col-sm-2"> Confirm Password:</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter password">
+					  </div>
+					   </div>
+				   
+				   
+				   
+					<h5 class="text">REGISTRIANT DETAILS</h5>
+					</div>
+					   <div class="row form-group">
+				      <div class="col-sm-2">Name</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter Registriant Name">
+					  </div>
+					   <div class="row form-group">
+				      <div class="col-sm-2">Email Id</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter Registriant Email Id">
+					  </div>
+					   </div>
+					   					   
+					   <div class="row form-group">
+				      <div class="col-sm-2">Mobile</div>
+					  <div class="col-sm-4">
+					     <input type="text" placeholder="Enter Registriant Mobile No">
+						  </div>
+						  
+					    <div class="col-sm-2">Degisation:</div>
+					    <div class="col-sm-4">
+					    <select tabindex="1" name="ucity" id="ucity">
+						<option value="1">1</option>
+						<option value="2" selected="Skill:">select Degisation</option>
+						<option value="3"> 2</option>
+						<option value="4">3</option>
+					</select>
+					</div>
+					  </div>
+					  
+					  <p>
+					
+						
+						<input type="checkbox" name="item[]" id="item1" value="G">Agree On Terms Conditions
+						
+				    </p>
+					  
+					   			
+				   
+				   
+				        <div class="row form-group">
+				      <div class="col-sm-12 text-center">
+					  
+			            <button class="btn btn-primary"> Register</button>
+						<button class="btn btn-primary"> Reset</button>
+					 
+			
+			  </div>
+			     
+			   </div>
+			   
+			   <div class="col-sm-2"></div>
+		  </div>
+	</div>	  
+	</body>
+</html>	

@@ -1,0 +1,282 @@
+<html>
+    <head>
+	    <link rel="stylesheet" href="dist/css/bootstrap.css">
+		<style>
+	i{color:red;}
+		</style>
+		<script>
+		function validate()
+			{
+			var name=document.getElementById("fname").value;
+			var email=document.getElementById("email").value;
+			var mobile=document.getElementById("mobile").value;
+			var city=document.getElementById("city").value;
+			var state=document.getElementById("state").value;
+			var address=document.getElementById("address").value;
+			var qualification=document.getElementById("qualification").value;
+			var univercity=document.getElementById("univercity").value;
+			var experience=document.getElementById("experience").value;
+			var male=document.getElementById("male").checked;
+			var female=document.getElementById("female").checked;
+			var course1=document.getElementById("course1").checked;
+			var course2=document.getElementById("course2").checked;
+			var course3=document.getElementById("course3").checked;
+			var course4=document.getElementById("course4").checked;
+			
+				name=name.trim();
+				email=email.trim();
+				mobile=mobile.trim();
+				address=address.trim();
+				if(name=="")
+				{
+					document.getElementById("nameerror").innerHTML="invalid name";
+					document.getElementById("fname").style.borderColor="red";
+					
+				}
+				else{
+					document.getElementById("fname").style.borderColor="green";
+					document.getElementById("nameerror").innerHTML="";
+				}
+				//.......for email..............//
+				if(email=="")
+				{
+					document.getElementById("email").style.borderColor="red";
+					document.getElementById("emailerror").innerHTML="invalid email";
+				}
+				else
+				{
+					document.getElementById("email").style.borderColor="green";
+					document.getElementById("emailerror").innerHTML="";
+				}
+				if(mobile=="")
+				{
+				document.getElementById("mobile").style.borderColor="red";
+				document.getElementById("mobileerror").innerHTML="invalid mobile no";
+				}
+				else{
+					document.getElementById("mobile").style.borderColor="green";
+					document.getElementById("mobileerror").innerHTML="";
+				}
+				if(city=="")
+				{
+				document.getElementById("city").style.borderColor="red";
+				document.getElementById("cityerror").innerHTML="invalid city";
+				}
+				else
+				{
+					document.getElementById("city").style.borderColor="green";
+					document.getElementById("cityerror").innerHTML="";
+				}
+				if(state=="")
+				{
+					document.getElementById("state").style.borderColor="red";
+					document.getElementById("stateerror").innerHTML="invalid state";
+				}
+				else
+				{
+					document.getElementById("state").style.borderColor="green";
+					document.getElementById("stateerror").innerHTML="";
+				}
+				if(address=="")
+				{
+					document.getElementById("address").style.borderColor="red";
+					document.getElementById("addresserror").innerHTML="invalid address";
+				}
+				else{
+					document.getElementById("address").style.borderColor="green";
+					document.getElementById("addresserror").innerHTML="";
+				}
+				if(qualification=="")
+				{
+					document.getElementById("Qulification").style.borderColor="red";
+					document.getElementById("Qulificationerror").innerHTML="invalid";
+				}
+				else{
+					document.getElementById("Qulification").style.borderColor="green";
+					document.getElementById("Qulificationerror").innerHTML="";
+				}
+				if(univercity=="")
+				{
+					document.getElementById("univercity").style.borderColor="red";
+					document.getElementById("univercityerror").innerHTML="invalid";
+				}
+				else{
+					document.getElementById("univercity").style.borderColor="green";
+					document.getElementById("univercityerror").innerHTML="";
+				}
+				if(experience=="")
+				{
+					document.getElementById("experience").style.borderColor="red";
+					document.getElementById("experienceerror").innerHTML="invalid";
+				}
+				else{
+					document.getElementById("experience").style.borderColor="green";
+					document.getElementById("experienceerror").innerHTML="";
+				}
+				//===========for gender=============//
+				if(male==true||female==true)
+				{
+					document.getElementById("gendererror").innerHTML="";
+				}
+				else{
+					document.getElementById("gendererror").innerHTML="please select the gender";
+				}
+				///=======for hobby================//
+				if(course1==true||course2==true||course3==true||course4==true)
+				{
+					document.getElementById("courseerror").innerHTML="";
+				}
+				else{
+					document.getElementById("courseerror").innerHTML="please select the course";
+				}
+			
+			}
+		</script>
+	</head>
+	<body>
+	<div class="container">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10 well">
+			  
+	<div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">name</div>
+	<div class="col-sm-4"></div>
+	<input type="text" name="fname" id="fname" class="form-control">
+	<i id="nameerror"></i>
+	</div>
+	<div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">email</div>
+	<div class="col-sm-4"></div>
+	 <input type="text" name="email" id="email" class="form-control">
+	<i id="emailerror"></i>
+	</div>
+	<div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">mobile</div>
+	<div class="col-sm-4"></div>
+	 <input type="text" name="mobile" id="mobile" class="form-control">
+	<i id="mobileerror"></i>
+	</div>
+	</div>
+	</div
+	<br><br>
+    <div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">city:</div>
+   <div class="col-sm-4">
+	<select tabindex="1" name="ucity" id="ucity">
+	<option value="1">purniya</option>
+	<option value="2" selected="Skill:">City:</option>
+	<option value="3"> saharsa</option>
+	<option value="4"> bhagalpur</option>
+	</select>
+	<i id="cityerror"></i>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">state:</div>
+	<div class="col-sm-4">
+    <select tabindex="1" name="ucity" id="ucity">
+	<option value="1">bihar</option>
+	<option value="2" selected="Skill:">state:</option>
+	<option value="3"> karnakata</option>
+	</select>
+	<i id="stateerror"></i>
+	</div>
+	</div>
+   <div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">Address:</div>
+	<div class="col-sm-4">
+<textarea id="address" class="form-control"></textarea>
+<i id="addresserror"></i>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">Qulification:</div>
+	<div class="col-sm-4">
+	<select tabindex="1" name="ucity" id="ucity">
+    <option value="1">B.tech</option>
+	<option value="2" selected="Skill:">M.tech:</option>
+	<option value="3">bac</option>
+   </select>
+   <i id="Qulificationerror"></i>
+   </div>
+   </div>
+   <div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">univercity:</div>
+	<div class="col-sm-4">
+	<select tabindex="1" name="ucity" id="ucity">
+    <option value="1">bangal</option>
+	<option value="2" selected="Skill:">univercity:</option>
+	<option value="3">wbut</option>
+   </select>
+   <i id="univercityerror"></i>
+   </div>
+   </div>
+    <div class="row">
+	<div class="col-sm-4">
+	<div class="col-sm-4">Exprienced:</div>
+	<div class="col-sm-4">
+	<select class="form-control">
+	<option value="1"> 2yr</option>
+	<option value="2" selected="Degree:">choose</option>
+	<option value="3"> fraser</option>
+ <option value="4"> 1yr</option>
+ <i id="experienceerror"></i>
+  </select>
+  </div>
+   </div>
+   </div>
+	</div>
+	</div>
+	</div>
+	<br>
+	<div class="row">
+	<div class="col-sm-4">
+	<label>gender</label>
+	</div>
+	<div class="col-sm-">
+	<input type="radio" name="gender" value="m" id="male">male
+	<input type="radio" name="gender" value="f" id="female">female
+	<i id="gendererror"></i>
+	</div>
+	<div class="col-sm-4">
+	<label>course</label>
+	</div>
+	<div class="col-sm-12">
+	<input type="checkbox" name="course" value="java" id="course1">java
+	<input type="checkbox" name="course" value=".net" id="course2">.net
+	<input type="checkbox" name="course" value="php" id="course3">php
+	<input type="checkbox" name="course" value="python" id="course4">python
+	<i id="courseerror"></i>
+					
+	</div>
+	</div>
+	 <div class="row">
+     <div class="col-sm-12 text-center">
+         <button class="btn btn-primary"> Register</button>
+	   	<button class="btn btn-primary"> clear</button>
+					 
+			
+		 </div>
+			     
+	 </div>
+		 <div class="col-sm-4"></div>	   
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>

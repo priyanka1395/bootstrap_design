@@ -1,0 +1,20 @@
+1.grid system.
+2.container
+3.row
+4.col-sm.
+5.table.
+table.
+table
+table-boerdered.
+table-hover.
+6.tr
+     active.
+	 success.
+	 danger.
+	 info.
+	 warning.
+	 7.pager.
+	 8.pagaination.
+ 2.class  the lebel of the button text but some time work.
+3. form group button btn-tex.button text.
+assignment no 1,2,4
